@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Info Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <aside class="stage">
+        <div class="brand">
+          <span class="brand-name">Welcome to</span>
+          <br />
+          <span class="brand-name">Rainn's User Info Card</span>
+          <span class="brand-sec">2IT-A</span>
+        </div>
+
+        <div class="stage-body">
+          <h1>Build your<br />info card</h1>
+          <p class="lead">
+            Fill in the form, then press <b>Show My Info</b> to see your card.
+          </p>
+
+          <article class="id-card">
+            <div class="id-top">
+              <div class="avatar" id="avatar">?</div>
+              <div>
+                <h2 id="cardName">Your name</h2>
+                <p id="cardEmail">Your email</p>
+              </div>
+            </div>
+            <div class="id-body" id="output">
+              <p class="placeholder">
+                Nothing to show yet. Your details will appear here.
+              </p>
+            </div>
+          </article>
+        </div>
+      </aside>
+
+      <main class="form-side">
+        <form id="infoForm" novalidate>
+          <h2 class="group-title">About you</h2>
+          <div class="grid">
+            <div class="field span-2">
+              <label for="fullName">Full name</label>
+              <input
+                type="text"
+                id="fullName"
+                placeholder="Rainzell Andrei Espaldon"
+              />
+            </div>
+            <div class="field">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="rainzellpogingging@example.com"
+              />
+            </div>
+            <div class="field">
+              <label for="phone">Phone number</label>
+              <input type="tel" id="phone" placeholder="0912 345 6789" />
+            </div>
+            <div class="field">
+              <label for="age">Age</label>
+              <input
+                type="number"
+                id="age"
+                min="1"
+                max="120"
+                placeholder="19"
+              />
+            </div>
+            <div class="field">
+              <label for="birthday">Birthday</label>
+              <input type="date" id="birthday" />
+            </div>
+          </div>
+
+          <h2 class="group-title">Where you are</h2>
+          <div class="grid">
+            <div class="field">
+              <label for="country">Country</label>
+              <select id="country">
+                <option value="">Select your country</option>
+                <option>Philippines</option>
+                <option>United States</option>
+                <option>Canada</option>
+                <option>United Kingdom</option>
+                <option>Australia</option>
+                <option>Japan</option>
+                <option>South Korea</option>
+                <option>Indonesia</option>
+                <option>Malaysia</option>
+                <option>Singapore</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="course">Course</label>
+              <select id="course">
+                <option value="">Select your course</option>
+                <option>BSIT</option>
+                <option>BSCS</option>
+              </select>
+            </div>
+            <div class="field span-2">
+              <label for="address">Address</label>
+              <input type="text" id="address" placeholder="Cabuyao, Laguna" />
+            </div>
+          </div>
+
+          <h2 class="group-title">Your picks</h2>
+
+          <div class="pick-group">
+            <span class="pick-label">Gender</span>
+            <div class="chips">
+              <label class="chip"
+                ><input type="radio" name="gender" value="Female" /><span
+                  >Female</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="gender" value="Male" /><span
+                  >Male</span
+                ></label
+              >
+              <label class="chip"
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="Prefer not to say"
+                /><span>Prefer not to say</span></label
+              >
+            </div>
+          </div>
+
+          <div class="pick-group">
+            <span class="pick-label">Favorite color</span>
+            <div class="chips">
+              <label class="chip"
+                ><input type="radio" name="color" value="Red" /><span
+                  >Red</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="color" value="Blue" /><span
+                  >Blue</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="color" value="Green" /><span
+                  >Green</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="color" value="Purple" /><span
+                  >Purple</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="color" value="Purple" /><span
+                  >White</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="color" value="Purple" /><span
+                  >Black</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="radio" name="color" value="Purple" /><span
+                  >Others</span
+                ></label
+              >
+            </div>
+          </div>
+
+          <div class="pick-group">
+            <span class="pick-label">Hobbies</span>
+            <div class="chips">
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Reading" /><span
+                  >Reading</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Gaming" /><span
+                  >Gaming</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Music" /><span
+                  >Music</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Sports" /><span
+                  >Sports</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Coding" /><span
+                  >Coding</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Walking" /><span
+                  >Walking</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Sleeping" /><span
+                  >Sleeping?</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Talking" /><span
+                  >Talking</span
+                ></label
+              >
+              <label class="chip"
+                ><input type="checkbox" class="hobby" value="Talking" /><span
+                  >Studying</span
+                ></label
+              >
+              <label class="chip"
+                ><input
+                  type="checkbox"
+                  class="hobby"
+                  value="Mountain climbing"
+                /><span>Mountain climbing</span></label
+              >
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="bio">About me</label>
+            <textarea
+              id="bio"
+              rows="3"
+              placeholder="Write a short line about yourself"
+            ></textarea>
+          </div>
+
+          <div class="buttons">
+            <button type="button" id="showBtn" class="btn primary">
+              Show My Info
+            </button>
+            <button type="button" id="clearBtn" class="btn ghost">Clear</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
